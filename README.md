@@ -29,7 +29,7 @@
 
 ### Варианты прошивки
 
-Если вас устраивает типовой вариант конфигурации, можно взять готовые файлы прошивки можно в разделе [Releases](https://github.com/Sergey1560/Marlin_FB4S/releases) (на данный момент только для плат robin nano v1.*)
+Если вас устраивает типовой вариант конфигурации, можно взять готовые файлы прошивки в разделе [Releases](https://github.com/Sergey1560/Marlin_FB4S/releases) (на данный момент только для плат robin nano v1.*)
 
 Вернуть стандартную прошивку можно в любой момент. Просто запишите ее на SD и включите принтер.
 
@@ -41,11 +41,11 @@
 
 ```C
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_MKS_ROBIN_NANO_S_V13
+  #define MOTHERBOARD BOARD_MKS_ROBIN_NANO_V1_3_F4
 #endif
 ```
 
-* В файле platformio.ini в параметре default_envs указать mks_robin_nano_v1_3
+* В файле platformio.ini в параметре default_envs указать mks_robin_nano_v1_3_f4
 
 ### Первое, что нужно сделать, после прошивки
 
