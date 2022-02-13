@@ -13,7 +13,7 @@
 
 #ifdef __STM32F1__
 
-#if DISABLED(MKS_WIFI)
+#if 0
 
 #include "../../inc/MarlinConfig.h"
 
@@ -280,7 +280,7 @@ DSTATUS disk_initialize (
   if (drv) return STA_NOINIT;                                         // Supports only drive 0
   sd_power_on();                                                      // Initialize SPI
 
-  if (Stat & STA_NODISK) return Stat;                                 // Is a card existing in the soket?
+  if (Stat & STA_NODISK) return Stat;                                 // Is a card existing in the socket?
 
   FCLK_SLOW();
   for (n = 10; n; n--) xchg_spi(0xFF);                                // Send 80 dummy clocks
